@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beginner-friendly guide to data science, data analysis, machine learning, and data visualization.">
+  <meta name="keywords" content="data science, data analysis, machine learning, data visualization, beginner guide">
+  <meta name="author" content="Data Science Basics">
+  <title>Data Science Basics | A Beginner's Guide</title>
+  <style>
+    :root { --navy:#14233b; --blue:#2563eb; --sky:#eaf3ff; --ink:#263247; --muted:#64748b; --white:#fff; --line:#e5eaf2; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); background:#f7f9fc; line-height:1.65; }
+    .topbar { background:var(--navy); color:white; padding:16px 7%; display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; }
+    .brand { font-weight:800; font-size:1.2rem; letter-spacing:.3px; }
+    nav { display:flex; gap:20px; flex-wrap:wrap; }
+    nav a { color:#dce8ff; text-decoration:none; font-size:.95rem; }
+    nav a:hover { color:white; text-decoration:underline; }
+    .hero { padding:76px 7% 70px; background:linear-gradient(135deg,#14233b,#2355a6); color:white; }
+    .hero-inner { max-width:1050px; margin:auto; }
+    .eyebrow { display:inline-block; color:#c9dcff; font-weight:700; font-size:.85rem; text-transform:uppercase; letter-spacing:1.4px; margin-bottom:12px; }
+    h1 { font-size:clamp(2.2rem,5vw,3.6rem); line-height:1.15; margin:0 0 18px; }
+    .hero p { max-width:720px; color:#e6efff; font-size:1.1rem; margin:0 0 28px; }
+    .button { display:inline-block; padding:12px 20px; border-radius:9px; background:#fff; color:#1e4fa1; font-weight:700; text-decoration:none; }
+    main { max-width:1100px; margin:0 auto; padding:44px 22px 70px; }
+    section { scroll-margin-top:24px; margin-bottom:46px; }
+    h2 { color:var(--navy); font-size:1.8rem; margin:0 0 14px; }
+    .intro { max-width:850px; color:#526176; }
+    .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:24px; }
+    .card { background:white; border:1px solid var(--line); border-radius:15px; padding:24px; box-shadow:0 5px 18px rgba(18,38,71,.045); }
+    .card .icon { width:44px; height:44px; border-radius:12px; background:var(--sky); display:grid; place-items:center; font-size:1.35rem; margin-bottom:12px; }
+    .card h3 { color:#1c3760; margin:0 0 8px; font-size:1.15rem; }
+    .card p { margin:0; color:var(--muted); }
+    .steps { background:#edf4ff; border-left:4px solid var(--blue); padding:22px 25px; border-radius:10px; }
+    .steps ol { margin:8px 0 0; padding-left:22px; }
+    .steps li { padding:5px 0; }
+    .quote { font-size:1.1rem; color:#1d4f91; background:white; border:1px solid var(--line); border-radius:14px; padding:24px; }
+    footer { text-align:center; background:var(--navy); color:#d6e3f7; padding:25px 18px; font-size:.9rem; }
+    footer p { margin:5px 0; }
+    @media(max-width:760px) { .cards { grid-template-columns:1fr; } .topbar { align-items:flex-start; } .hero { padding-top:54px; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">📊 Data Science Basics</div>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#topics">Topics</a>
+      <a href="#process">How It Works</a>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Explore the world through data</span>
+      <h1>Welcome to Data Science</h1>
+      <p>Discover how data can help us understand problems, find patterns, make smarter decisions, and build a better future.</p>
+      <a class="button" href="#about">Start Exploring</a>
+    </div>
+  </section>
+
+
+  <main>
+    <section id="about">
+      <h2>What Is Data Science?</h2>
+      <p class="intro">Data Science is an interdisciplinary field that combines statistics, programming, and domain knowledge to collect, organize, analyze, and interpret data. It helps transform raw information into useful insights that support decision-making and solve real-world problems.</p>
+    </section>
+
+
+    <section id="topics">
+      <h2>Key Areas of Data Science</h2>
+      <p class="intro">Data science includes several important skills and techniques. Here are three of its core areas:</p>
+      <div class="cards">
+        <article class="card">
+          <div class="icon" aria-hidden="true">🔎</div>
+          <h3>Data Analysis</h3>
+          <p>Explore and clean data, identify trends, and answer questions using evidence. Data analysis helps turn numbers into meaningful information.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">🤖</div>
+          <h3>Machine Learning</h3>
+          <p>Teach computers to learn patterns from examples and use those patterns to make predictions or support automated decisions.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">📈</div>
+          <h3>Data Visualization</h3>
+          <p>Present information through charts, graphs, and dashboards so complex data becomes easier to understand and communicate.</p>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="process">
+      <h2>How Data Science Works</h2>
+      <div class="steps">
+        <ol>
+          <li><strong>Ask a question:</strong> Define the problem you want to solve.</li>
+          <li><strong>Collect data:</strong> Gather relevant information from reliable sources.</li>
+          <li><strong>Prepare data:</strong> Clean, organize, and check the data for errors.</li>
+          <li><strong>Analyze:</strong> Explore the data and discover patterns or relationships.</li>
+          <li><strong>Communicate:</strong> Share results using clear explanations and visualizations.</li>
+        </ol>
+      </div>
+    </section>
+
+
+    <section>
+      <h2>Why Is Data Science Important?</h2>
+      <p class="intro">Data science is used in healthcare, business, education, transportation, sports, and many other fields. It can help organizations understand their customers, improve services, predict outcomes, reduce waste, and make decisions based on evidence rather than guesswork.</p>
+      <div class="quote"><strong>Data is more than numbers — it is a tool for discovering insights and making better decisions.</strong></div>
+    </section>
+  </main>
+  <footer>
+    <p><strong>Data Science Basics</strong> — A simple introduction to the world of data.</p>
+    <p>Created as an educational HTML website.</p>
+  </footer>
+</body>
+</html>
