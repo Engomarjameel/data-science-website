@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://engomarjameel.github.io/data-science-website/sitemap.xml
